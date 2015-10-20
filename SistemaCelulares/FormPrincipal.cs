@@ -21,6 +21,7 @@ namespace SistemaCelulares
         {
             FormLogin fl = new FormLogin();
             fl.Show();
+            this.Dispose();
         }
     }
 }

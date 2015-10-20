@@ -21,7 +21,13 @@ namespace SistemaCelulares
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Close();
+            
+            DialogResult result = MessageBox.Show(this, "Si cierra esta pantalla se cerrará la aplicación. ¿Desea continuar?", "Mensaje de Sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
