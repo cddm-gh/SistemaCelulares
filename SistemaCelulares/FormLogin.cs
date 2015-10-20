@@ -76,7 +76,7 @@ namespace SistemaCelulares
                     if (count == 1)
                     {
                         MessageBox.Show("Bienvenido!");
-                        toolStripStatusLabel1.Text = "[V] Usuario identificado con exito.";
+                        toolStripStatusLabel1.Text = "[/] Usuario identificado con exito.";
                         validado = true;
                         //TODO: LLamar a la ventana principal del sistema
                         this.Hide();
