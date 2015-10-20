@@ -72,7 +72,10 @@ namespace SistemaCelulares
                         MessageBox.Show("Bienvenido!");
                         toolStripStatusLabel1.Text = "[V] Usuario identificado con exito.";
                         validado = true;
-                        //TODO: LLamar a la ventana principal del sistema 
+                        //TODO: LLamar a la ventana principal del sistema
+                        this.Hide();
+                        FormPrincipal fp = new FormPrincipal();
+                        fp.Show();
                     }
                     else if (count > 1)
                     {
